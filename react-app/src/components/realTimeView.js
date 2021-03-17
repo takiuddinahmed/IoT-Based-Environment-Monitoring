@@ -39,34 +39,41 @@ export default function RealTimeView(){
                     <tr>
                         <th>Parameter</th>
                         <th>Value</th>
-                        {/* <th>Status</th> */}
+                        <th>Ideal Range</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Temperature</td>
                         <td>{data?.temp}  &deg;C</td>
-                        {/* <td className={`text-${status?.tempStyle}`}>{status.tempText}</td> */}
+                        <td>18.3°C to 21.11°C (Ideal) <br/>
+                            4°C to 35°C (Survivable)
+                        </td>
                     </tr>
                     <tr>
                         <td>Humidity</td>
                         <td>{data?.humidity} %</td>
+                        <td>30-70%</td>
                     </tr>
                     <tr>
                         <td>Noise</td>
                         <td>{data?.noise} dB</td>
+                        <td> {'<'}85 dB</td>
                     </tr>
                     <tr>
                         <td>UV Ray</td>
                         <td>{data?.uv} mW/cm<sup>2</sup></td>
+                        <td> 0-5</td>
                     </tr>
                     <tr>
                         <td>Dust</td>
                         <td>{data?.dust} ug/m<sup>3</sup></td>
+                        <td>    0-35.4 ug/m<sup>3</sup></td>
                     </tr>
                     <tr>
                         <td>CO</td>
                         <td>{data?.co} ppm</td>
+                        <td>{'<'}50 ppm</td>
                     </tr>
                 </tbody>
             </Table>

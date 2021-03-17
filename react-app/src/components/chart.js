@@ -92,7 +92,7 @@ export default function Chart(){
 
             <SingleChart
                 title="Temperature vs Time graph"
-                axisY="Temperature (C)"
+                axisY="Temperature (&deg;C)"
                 axisX="Time"
                 data={tempGraphData}
             />
@@ -106,28 +106,28 @@ export default function Chart(){
 
             <SingleChart
                 title="Noise vs Time graph"
-                axisY="Noise"
+                axisY="Noise (dB)"
                 axisX="Time"
                 data={noiseGraphData}
             />
 
             <SingleChart
                 title="UV vs Time graph"
-                axisY="UV"
+                axisY="UV (mW/cm&sup2;)"
                 axisX="Time"
                 data={uvGraphData}
             />
 
             <SingleChart
                 title="Dust vs Time graph"
-                axisY="Dust"
+                axisY="Dust (ug/m&sup3;"
                 axisX="Time"
                 data={dustGraphData}
             />
 
             <SingleChart
                 title="CO vs Time graph"
-                axisY="co"
+                axisY="CO (ppm)"
                 axisX="Time"
                 data={coGraphData}
             />

@@ -196,6 +196,8 @@ float dustLevel(){
   outputVoltage = mapfloat(outputVoltage,0.0,3.7,0,5);
 
   float dustDensity = 0.17 * outputVoltage - 0.1;
+    
+  dustDensity *= 100.0;
 
   if (dustDensity < 0) dustDensity = 0;
 
